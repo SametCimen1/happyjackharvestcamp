@@ -1,0 +1,113 @@
+:root{
+    --margintop:5rem;
+    --fontColor: #303545;
+    --headerFontSize: 3rem;
+    --paragraphFontSize: 1.5rem;
+    --font: 'Inter', sans-serif;
+    --cyan:#38BDF8;
+}
+
+*{
+    overflow-x: hidden;
+    padding:0;
+    margin:0;
+}
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0.94deg, rgba(0, 0, 0, 0.2) 0.8%, rgba(0, 0, 0, 0) 99.2%), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(kidsMain.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1, p{
+        color:white;    
+        font-family: var(--font);
+    }
+
+    h1{
+        font-size: 4rem;
+    }
+    p{
+        font-size: 2rem;
+    }
+    div{
+        cursor: pointer;
+        height: 50px;
+        width: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border:1px solid white;
+        border-radius: 50%;
+        i{
+            color:white;
+            font-size: 1.5rem;
+        }
+    }
+    
+}
+
+
+
+.pagewidth{
+    width: 90%;
+    margin: auto;
+    margin-top: var(--margintop);
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: var(--margintop);
+    
+    div{
+        width: 45%;
+    }
+}
+
+h1,h2,p{
+    font-family: var(--font);
+}
+h1{
+    text-align: center;
+    font-size: var(--headerFontSize);
+    color: var(--fontColor);
+}
+p{
+    text-align: center;
+    font-size: var(--paragraphFontSize);
+    color: var(--fontColor);
+}
+.imageContainer{
+    img{
+        width: 100%;
+        border-radius: 10px;
+    }
+}
+.quotedParagprah{
+    font-size: var(--paragraphFontSize);
+    color: var(--fontColor);
+    font-style: italic; 
+    text-align: center;
+    &::after{
+        content:"\"";
+        width: 10px;
+        height: 10px;
+        color: var(--cyan);
+        font-size: 2rem;
+
+    }
+    &::before{
+        content:"\"";
+        width: 10px;
+        font-size: 2rem;
+        height: 10px;
+        color: var(--cyan);
+
+    }
+}
