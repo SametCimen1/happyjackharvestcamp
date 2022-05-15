@@ -1,8 +1,8 @@
 :root{
     --margintop:5rem;
     --fontColor: #303545;
-    --headerFontSize: 3rem;
-    --paragraphFontSize: 1.5rem;
+    --headerFontSize: 2rem;
+    --paragraphFontSize: 1.2rem;
     --font: 'Inter', sans-serif;
     --cyan:#38BDF8;
 }
@@ -55,18 +55,19 @@
 
 
 .pagewidth{
-    width: 90%;
+    width: 80vw;
+    padding:35px 0;
     margin: auto;
     margin-top: var(--margintop);
 }
 .container{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: var(--margintop);
     
     div{
-        width: 45%;
+        width: 40%;
     }
 }
 
@@ -82,6 +83,7 @@ p{
     text-align: center;
     font-size: var(--paragraphFontSize);
     color: var(--fontColor);
+    font-weight: 400;
 }
 .imageContainer{
     img{
@@ -94,6 +96,8 @@ p{
     color: var(--fontColor);
     font-style: italic; 
     text-align: center;
+    font-weight: 800;
+    margin-top: var(--margintop);
     &::after{
         content:"\"";
         width: 10px;
@@ -110,4 +114,85 @@ p{
         color: var(--cyan);
 
     }
+}
+
+
+.cyanSection{
+   margin-top: 3rem;
+    width: 100%;
+    background: var(--cyan);
+    text-align: center;
+    h1,p,button{
+        margin-top: 3rem;
+    }
+    button{
+        margin-bottom: 3rem;
+        width: 10%;
+        border:1px solid var(--fontColor);
+        padding:10px;
+        background-color: transparent;
+        border-radius: 10px;
+        :link{
+            text-decoration: none;
+            color:#303545
+        }
+    }
+}
+
+
+.card{
+   
+    width: 20%;
+    border: 1px solid #303545;
+    text-align: center;
+    display: flex;
+    padding:20px 0;
+    flex-direction: column;
+    border-radius: 10px;
+    i{
+        margin-top: 1em;
+        margin-bottom: 1rem;
+        color: var(--cyan);
+        font-size: 3rem;
+    
+    }
+    div{
+        width: 80%;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 1rem;
+    }
+
+
+
+}
+
+.mt3{
+    margin-top: 3rem;
+}
+.reviewCard{
+    margin-top: 2rem;
+    p{
+        text-align: left;
+    }
+
+}
+.reviewImage{
+    display: flex;
+    align-items: center;
+    img{
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    h3{
+    
+        margin-left: 1rem;
+        font-size: 2rem;
+        font-style: var(--font);
+        color: var(--fontColor);
+        font-weight: 500;
+    }
+
 }
