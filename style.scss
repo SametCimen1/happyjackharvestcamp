@@ -121,6 +121,7 @@ p{
    margin-top: 3rem;
     width: 100%;
     background: var(--cyan);
+
     text-align: center;
     h1,p,button{
         margin-top: 3rem;
@@ -136,6 +137,9 @@ p{
             text-decoration: none;
             color:#303545
         }
+    }
+    p{
+       margin: 0 1rem;
     }
 }
 
@@ -196,3 +200,76 @@ p{
     }
 
 }
+
+.card{
+
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 20%;
+    min-height: 300px;
+    padding: 15px;
+}
+img{
+    width: 20%;
+    
+}
+
+.cardIcon{
+    text-align: center;
+    margin-bottom: 3rem;
+    i{
+        font-size:3rem;
+        background:-moz-linear-gradient(left, #4255FF 0%, #01D4FE 100%); 
+        background: -webkit-linear-gradient(left, #4255FF 0%,#01D4FE 100%); 
+        background: linear-gradient(to right, #4255FF 0%,#01D4FE 100%);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+       -webkit-text-fill-color:transparent;
+        
+    }
+
+}
+
+.amenetia{
+    display:flex; justify-content: space-between;
+}
+
+@media (max-width:1200px) {
+
+    .amenetia{
+        flex-direction: column;
+        align-items: center;
+    }    
+    .card{
+        width: 50%;
+        margin-bottom: 3rem;
+        
+    }
+
+}
+
+
+@media (max-width:1000px) {
+    .container>div{
+        width: 70%;
+    }
+    .firstContainer{
+        flex-direction: column; 
+
+    }
+    .secondContainer{
+        flex-direction:column-reverse;
+    }
+    .imageContainer{
+        width: 70%;
+        border-radius: 0;
+    }
+    .containerText{
+        margin-top: 2rem;
+        width: 70%;
+        text-align: center;
+    }
+
+}
+
